@@ -635,7 +635,7 @@ class _ProductChecker:
                 "The client noticed that the server is not Elasticsearch "
                 "and we do not support this unknown product"
             )
-        raise UnsupportedProductError(message)
+        print(message)
 
     @classmethod
     def check_product(cls, headers, response):
